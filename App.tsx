@@ -6,15 +6,16 @@
  */
 
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import MyText from './Components/MyText/MyText';
 const App = () => {
+
   return (
     <SafeAreaView>
-      <Text>Hello Ji</Text>
       <MyText />
     </SafeAreaView>
   );
 };
+
 
 export default App;
