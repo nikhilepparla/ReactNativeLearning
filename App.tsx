@@ -12,7 +12,7 @@ const App = () => {
   return (
     <SafeAreaView>
       <Text>Hello Ji</Text>
-      <MyText name={'Nikhil'} age={25} />
+      <MyText />
     </SafeAreaView>
   );
 };

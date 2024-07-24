@@ -1,20 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Alert, Text} from 'react-native';
-import PropTypes from 'prop-types';
 
-const MyText = ({name, age}) => {
-  const onHandle = () => {
-    alert('ONClicked');
+const MyText = () => {
+  const [text, UpdatedText] = useState('Nikhil');
+  const changeText = () => {
+    UpdatedText('Text Updated');
   };
-  return (
-    <Text onPress={() => onHandle()}>
-      Name is {name} and Age is {age}
-    </Text>
-  );
-};
-
-MyText.propTypes = {
-  name: PropTypes.string.isRequired,
-  age: PropTypes.number.isRequired,
+  return <Text onPress={changeText}>Text from another File {text}</Text>;
 };
 export default MyText;
